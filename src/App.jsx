@@ -323,11 +323,11 @@ export default function App() {
                     <form onSubmit={handleAuth} className="space-y-4">
                         <div>
                             <label className="block text-sm font-bold text-slate-700 mb-1">Username</label>
-                            <input required type="text" value={username} onChange={e => setUsername(e.target.value)} className="w-full border-2 border-slate-200 p-2.5 rounded-lg focus:border-blue-600 outline-none transition" placeholder="budi / andi / admin" />
+                            <input required type="text" value={username} onChange={e => setUsername(e.target.value)} className="w-full border-2 border-slate-200 p-2.5 rounded-lg focus:border-blue-600 outline-none transition" placeholder="username" />
                         </div>
                         <div>
                             <label className="block text-sm font-bold text-slate-700 mb-1">Password</label>
-                            <input required type="password" value={password} onChange={e => setPassword(e.target.value)} className="w-full border-2 border-slate-200 p-2.5 rounded-lg focus:border-blue-600 outline-none transition" placeholder="123" />
+                            <input required type="password" value={password} onChange={e => setPassword(e.target.value)} className="w-full border-2 border-slate-200 p-2.5 rounded-lg focus:border-blue-600 outline-none transition" placeholder="********" />
                         </div>
                         {isRegistering && (
                             <div>
